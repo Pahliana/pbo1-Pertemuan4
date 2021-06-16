@@ -98,6 +98,6 @@ public class Mahasiswa {
     //Inheritance / pewarisan
     //Polymorphism (poly - morph - ism)
     //1. overloading = method sama, parameter berbeda, dalam 1 class
-    //2. overriding
+    //2. overriding = method sama, parameter sama, pada SubClass
 
 }

@@ -5,6 +5,17 @@ public class MahasiswaTransfer extends Mahasiswa {
     private int jumlahSksSebelumnya;
     private String namaKampusSebelumnya;
 
+    public boolean delete(){
+        String sql = "DELETE FROM mahasiswa WHERE npm = " +npm + " - Ini Overriding";
+        System.out.println(sql);
+        return false;
+    }
+
+    @Override
+    public boolean delete(int id) {
+        return super.delete(id);
+    }
+
     public int getJumlahSksSebelumnya() {
         return jumlahSksSebelumnya;
     }
