@@ -17,19 +17,15 @@ public class Aksi {
         fulan.nama = "Fulan bin Fulan";
         fulan.jumlahSKS = 100;
         fulan.ipk = 3.11;
+        fulan.setKota("Bjb");
         fulan.tampilkanInfo();
-        if (fulan.create()) {
-            System.out.println("Data Berhasil Disimpan");
-        } else {
-            System.out.println("Data Gagal Disimpan");
-        }
-
+        fulan.create();
 
         Mahasiswa mahasiswa = new Mahasiswa();
         mahasiswa.npm = "19631100";
         mahasiswa.nama = "Fulanah binti Fulan";
         mahasiswa.tampilkanInfo();
-
+        mahasiswa.create();
 
         Mahasiswa m = new Mahasiswa();
         m.tampilkanInfo();

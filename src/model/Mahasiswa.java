@@ -9,10 +9,20 @@ public class Mahasiswa {
     public String nama;
     public int jumlahSKS;
     public double ipk;
+    private String kota;
+
+    public String getKota() {
+        return kota;
+    }
+
+    public void setKota(String kota) {
+        this.kota = kota;
+    }
 
     //behavior/method
     public void mengambilKRS(){}
     public void cetakKRS(){}
+
     public void tampilkanInfo(){
         System.out.println("====================================================");
         System.out.println("NPM : "+ npm);
@@ -21,7 +31,7 @@ public class Mahasiswa {
         System.out.println("IPK : "+ ipk);
     }
     public boolean create(){
-        String insertSQL = "INSERT INTO mahasiswa VALUES ('"+npm+"', '"+nama+"', '"+jumlahSKS+"', '"+ipk+"')";
+        String insertSQL = "INSERT INTO mahasiswa VALUES ('"+npm+"', '"+nama+"', "+jumlahSKS+", "+ipk+")";
         System.out.println(insertSQL);
         boolean berhasil = true;
         if(berhasil){
