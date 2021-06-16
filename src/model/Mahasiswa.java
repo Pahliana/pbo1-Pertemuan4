@@ -49,12 +49,55 @@ public class Mahasiswa {
         return false;
     }
     public boolean delete(){
+        String sql = "DELETE FROM mahasiswa WHERE npm = " +npm;
+        System.out.println(sql);
+        return false;
+    }
+    public boolean delete(int id){
+        String sql = "DELETE FROM mahasiswa WHERE id = " +id;
+        System.out.println(sql);
+        return false;
+    }
+    public boolean delete(String kota){
+        String sql = "DELETE FROM mahasiswa WHERE kota = " +kota;
+        System.out.println(sql);
+        return false;
+    }
+    public boolean delete(String npm, int sks){
+        String sql = "DELETE FROM mahasiswa WHERE npm = " +npm;
+        System.out.println(sql);
+        return false;
+    }
+    public boolean delete(int usia, String kota){
         return false;
     }
 
+    //Constructor
     public Mahasiswa() {
         System.out.println("Ini Adalah Constructor");
         npm = "NPM Masih Kosong";
         nama = "Nama Masih Kosong";
     }
+
+    public Mahasiswa(String npm, String nama, int jumlahSKS, double ipk, String kota) {
+        this.npm = npm;
+        this.nama = nama;
+        this.jumlahSKS = jumlahSKS;
+        this.ipk = ipk;
+        this.kota = kota;
+    }
+
+    public Mahasiswa(String npm, String nama) {
+        this.npm = npm;
+        this.nama = nama;
+    }
+
+
+    //Abstraksi
+    //Enkapsulasi
+    //Inheritance / pewarisan
+    //Polymorphism (poly - morph - ism)
+    //1. overloading = method sama, parameter berbeda, dalam 1 class
+    //2. overriding
+
 }
