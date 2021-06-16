@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
+//SuperClass/Parent-Class
 public class Mahasiswa {
     //atribut/properties
 
