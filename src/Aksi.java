@@ -7,6 +7,11 @@ public class Aksi {
 
         //instance/pembuatan object dari sebuah class
         //Nama Class NamaObject = new Constructor
+        //Contructor merupakan method
+        //Contructor tidak punya return value dan tidak punya void
+        //Constructor sama dengan Class
+        //Constructor jalan ketika object di buat atau di-instance
+
         Mahasiswa fulan = new Mahasiswa();
         fulan.npm = "19631107";
         fulan.nama = "Fulan bin Fulan";
@@ -25,5 +30,8 @@ public class Aksi {
         mahasiswa.nama = "Fulanah binti Fulan";
         mahasiswa.tampilkanInfo();
 
+
+        Mahasiswa m = new Mahasiswa();
+        m.tampilkanInfo();
     }
 }

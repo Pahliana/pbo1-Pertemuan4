@@ -40,4 +40,10 @@ public class Mahasiswa {
     public boolean delete(){
         return false;
     }
+
+    public Mahasiswa() {
+        System.out.println("Ini Adalah Constructor");
+        npm = "NPM Masih Kosong";
+        nama = "Nama Masih Kosong";
+    }
 }
